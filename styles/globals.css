@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+  rgb(var(--background-start-rgb));
+}
+
+.mainPage{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: '100%';
+  background-color: '#EFF3FF';
+}
+.headBox{
+  margin: 0;
+  height:40%;
+  background-color:#0048B4;
+  padding:40px;
+  width:90%;
+  border-radius:8px;
+  border:5px solid #fff;
+}
+.formSection{
+  width:70%;
+  margin-top:-20px;
+  z-index:2;
+  border-radius:6px;
+  background: #039FE3;
+  padding: 50px;
+  border:5px solid #fff;
+}
+.headText{
+  color:white;
+  font-size:35px;
+  text-align:center;
+}
+.formInput,
+.formCalender{
+  display: flex;
+}
+.formInputLabel{
+  width:200px;
+  display:inline-block;
+  font-size: 20px;
+  color: #fff;
+}
+.textBoxSize{
+  color: #0048b4;
+  font-size: 16px;
+  width: 280px;
+  padding: 10px 12px;
+}
+.mark{
+  color: red;
+  font-weight: 700;
+  font-size: 28px;
+}
+.react-datepicker-wrapper{
+  width: auto !important;
+}
+.iconShow{
+  width: 30px;
+  font-size: 25px;
+    padding: 10px 20px!important;
+    color: #0048B4;
+    text-align: center;
+    justify-content: center;
+}
+.iconwithInput{
+  display: flex;
+  width: 348px;
+  background-color: #EFF3FF;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: #0048b4;
+  font-size: 18px;
+}
+.subBtn{
+  padding: 10px;
+  border-radius: 5px;
+   background-color: #0048b4;
+   text-align: center;
+   width: 250px;
+   color: #fff;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+@media (max-width:600px) {
+  .mainPage{
+    /* display:inline-table; */
+    width: 100%;
+    margin: 0;
+  }
+  .formSection{
+    padding: 30px;
+    margin-left: 3px;
+    width: 80%;
+  }
+  .formInput{
+    display: inline-grid;
+    width: 80%;
+    margin-left: -70px;
+  }
+  .formInputLabel{
+    width: 270px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #fff;
+  }
+  .formCalender{
+    width: 77%;
+    display: grid;
+  }
+  .react-calendar{
+    width: 310px !important;
+  }
+  .headText {
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+  }
+  .textBoxSize{
+    width: 235px;
+  }
+  .iconwithInput{
+    display: flex;
+    width: 274px;
+  }
+  .headBox{
+    padding:20px;
+  }
+  .iconShow {
+    width: 20px;
+    font-size: 25px;
+    padding: 9px 8px!important;
+    color: #0048b4;
+    text-align: center;
+  }
+  .subBtn{
+    padding: 10px;
+    border-radius: 5px;
+     background-color: #0048b4;
+     text-align: center;
+     width: 200px;
+     color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
